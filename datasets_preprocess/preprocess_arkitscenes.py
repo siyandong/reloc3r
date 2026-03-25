@@ -106,9 +106,6 @@ def main(rootdir, pairsdir, outdir):
 
         valid_scenes = []
         for scene_subdir in scene_dirs:
-            # if int(scene_subdir) > 41126999:
-            if int(scene_subdir) > 42445000 or int(scene_subdir) < 41126999:
-                continue
             out_scene_subdir = osp.join(outsubdir, scene_subdir)
             os.makedirs(out_scene_subdir, exist_ok=True)
 
